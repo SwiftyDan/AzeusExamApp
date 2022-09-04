@@ -17,7 +17,7 @@ final class RecentVC: BaseViewController {
     var offSet: CGFloat = 0
     var lineOffSet: CGFloat = 0
 
-    private var categHeight: NSLayoutConstraint!
+    private var recentViewHeight: NSLayoutConstraint!
     private var basketTableViewHeight: NSLayoutConstraint!
 
     private let recentView = RecentView()
@@ -63,9 +63,10 @@ final class RecentVC: BaseViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        
-
-       
+        UIView.animate(withDuration: 0.2) {
+            self.view.layoutIfNeeded()
+            self.recentViewHeight.constant = self.recentView.collectionViews.contentSize.height
+        }
        
     }
     
@@ -144,7 +145,8 @@ extension RecentVC {
         scrollView.trailingAnchor.constraint(equalTo: scrollContentView.trailingAnchor).isActive = true
         scrollView.heightAnchor.constraint(equalTo: scrollContentView.heightAnchor).isActive = true
         scrollView.bottomAnchor.constraint(equalTo: recentView.bottomAnchor, constant: 5).isActive = true
-        recentView.heightAnchor.constraint(equalToConstant: screen_height).isActive = true
+        recentViewHeight = recentView.collectionViews.heightAnchor.constraint(equalToConstant: recentView.collectionViews.contentSize.height)
+        recentViewHeight.isActive = true
         recentView.topAnchor.constraint(equalTo: scrollView.topAnchor).isActive = true
         recentView.leadingAnchor.constraint(equalTo: scrollContentView.leadingAnchor).isActive = true
         recentView.trailingAnchor.constraint(equalTo: scrollContentView.trailingAnchor).isActive = true

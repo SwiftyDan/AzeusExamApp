@@ -86,7 +86,7 @@ extension RecentCell {
 
 
         titleLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
-        titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
+        titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor,constant: -10).isActive = true
    
         
         imageView.topAnchor.constraint(equalTo: contentView.topAnchor,constant: 10).isActive = true
@@ -97,7 +97,7 @@ extension RecentCell {
         imageView.widthAnchor.constraint(equalToConstant: 200).isActive = true
         imageView.widthAnchor.constraint(equalToConstant: 200).isActive = true
   
-        idLabel.trailingAnchor.constraint(equalTo: imageView.trailingAnchor,constant: -5).isActive = true
+        idLabel.trailingAnchor.constraint(equalTo: imageView.trailingAnchor,constant: -10).isActive = true
         idLabel.bottomAnchor.constraint(equalTo: imageView.bottomAnchor,constant: -5).isActive = true
         idLabel.widthAnchor.constraint(equalToConstant: 70).isActive = true
     
