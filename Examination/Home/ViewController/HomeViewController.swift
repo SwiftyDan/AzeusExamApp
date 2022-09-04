@@ -11,7 +11,7 @@ import UIKit
 class HomeViewController: BaseViewController,XMLParserDelegate {
 
     // MARK: - Properties
-    var contentsData: [ContentsData] = []
+    var contentsData: [ContentsData?] = []
     var imugurData: [PhotosDataModel]?
     var elementName: String = String()
     var descriptions = String()
@@ -104,7 +104,9 @@ class HomeViewController: BaseViewController,XMLParserDelegate {
         }
         
         getInfo()
+        let book = ContentsData(filename: "alice-in-wonderland.pd", description: "The adventure of Alice in Wonderland" )
         
+        contentsData.append(book)
     }
     
     // MARK: - Network
@@ -143,7 +145,7 @@ class HomeViewController: BaseViewController,XMLParserDelegate {
     
     // 2
     func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
-        print(elementName,"elementName")
+       
         if elementName == "pdf-item" {
             let book = ContentsData(filename: filename, description: descriptions )
       
@@ -254,7 +256,7 @@ extension HomeViewController: UITableViewDataSource {
             return slice5.count
             
         }else {
-            
+           
             return contentsData.count
         }
      
@@ -266,7 +268,8 @@ extension HomeViewController: UITableViewDataSource {
             guard let section0 = imugurData?[indexPath.row] else {return cell}
             cell.configurePhotos(section0)
         }else {
-            let section1 = contentsData[indexPath.row]
+            guard let section1 = contentsData[indexPath.row] else {return cell}
+            
             cell.configurePDF(section1)
         }
       

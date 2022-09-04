@@ -93,9 +93,12 @@ class  DetailsViewController : BaseViewController,UIScrollViewDelegate {
               // Load Sample.pdf file.
         let url = pdfData?.filename.dropLast(4)
         
-        let fileURL = Bundle.main.url(forResource: "\(url ?? "")", withExtension: "pdf")
+        guard let fileURL = Bundle.main.url(forResource: "\(url ?? "")", withExtension: "pdf") else {
+            self.alert("\("FILE NOT EXISTED" )")
+            return
+        }
        
-              pdfView.document = PDFDocument(url: fileURL!)
+        pdfView.document = PDFDocument(url: fileURL)
     }
     @objc func handleDoubleTapScrollView(recognizer: UITapGestureRecognizer) {
            if scrollImg.zoomScale == 1 {

@@ -15,7 +15,6 @@
 		22B476A428C1D57500A5E171 /* ExaminationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B476A328C1D57500A5E171 /* ExaminationTests.swift */; };
 		22B476AE28C1D57500A5E171 /* ExaminationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B476AD28C1D57500A5E171 /* ExaminationUITests.swift */; };
 		22B476B028C1D57500A5E171 /* ExaminationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B476AF28C1D57500A5E171 /* ExaminationUITestsLaunchTests.swift */; };
-		22B476BD28C1D5CA00A5E171 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B476BC28C1D5CA00A5E171 /* test.swift */; };
 		22B476C528C1D93B00A5E171 /* relativity.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 22B476C228C1D93B00A5E171 /* relativity.pdf */; };
 		22B476C628C1D93B00A5E171 /* contents.xml in Resources */ = {isa = PBXBuildFile; fileRef = 22B476C328C1D93B00A5E171 /* contents.xml */; };
 		22B476C728C1D93B00A5E171 /* adventures-of-sherlock-holmes.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 22B476C428C1D93B00A5E171 /* adventures-of-sherlock-holmes.pdf */; };
@@ -92,7 +91,6 @@
 		22B476A928C1D57500A5E171 /* ExaminationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExaminationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B476AD28C1D57500A5E171 /* ExaminationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExaminationUITests.swift; sourceTree = "<group>"; };
 		22B476AF28C1D57500A5E171 /* ExaminationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExaminationUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		22B476BC28C1D5CA00A5E171 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		22B476C228C1D93B00A5E171 /* relativity.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = relativity.pdf; sourceTree = "<group>"; };
 		22B476C328C1D93B00A5E171 /* contents.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = contents.xml; sourceTree = "<group>"; };
 		22B476C428C1D93B00A5E171 /* adventures-of-sherlock-holmes.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "adventures-of-sherlock-holmes.pdf"; sourceTree = "<group>"; };
@@ -212,7 +210,6 @@
 				22B4769528C1D57500A5E171 /* Assets.xcassets */,
 				22B4769728C1D57500A5E171 /* LaunchScreen.storyboard */,
 				22B4769A28C1D57500A5E171 /* Info.plist */,
-				22B476BC28C1D5CA00A5E171 /* test.swift */,
 			);
 			path = Examination;
 			sourceTree = "<group>";
@@ -676,7 +673,6 @@
 				22E99CA828C3A7AB00DF44F4 /* AppConstants.swift in Sources */,
 				22E99C9E28C3A7AB00DF44F4 /* UILabelExtension.swift in Sources */,
 				22E99CAB28C3A7AB00DF44F4 /* BaseLabel.swift in Sources */,
-				22B476BD28C1D5CA00A5E171 /* test.swift in Sources */,
 				22E99C9B28C3A7AB00DF44F4 /* UIImageViewExtension.swift in Sources */,
 				22E99CA628C3A7AB00DF44F4 /* UIImageExtension.swift in Sources */,
 				22E99CB628C3A7AB00DF44F4 /* RecentVC.swift in Sources */,
