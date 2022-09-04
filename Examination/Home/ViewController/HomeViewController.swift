@@ -289,8 +289,8 @@ extension HomeViewController: UITableViewDelegate {
         var selectedMenu = [SavedData]()
         
         let imugurData = imugurData?[indexPath.row]
-     
-        selectedMenu.append(SavedData(["id": imugurData?.id ?? "", "link": imugurData?.link ?? "", "gifv": imugurData?.gifv ?? "", "title": imugurData?.title ?? "","images": imugurData?.images?[0].link ?? ""]))
+        let img = imugurData?.images?[0].link ?? imugurData?.link!
+        selectedMenu.append(SavedData(["id": imugurData?.id ?? "", "link": imugurData?.link ?? "", "gifv": imugurData?.gifv ?? "", "title": imugurData?.title ?? "","images": imugurData?.images?[0].link ?? img!]))
        
      returnConfigure(selected: selectedMenu)
 

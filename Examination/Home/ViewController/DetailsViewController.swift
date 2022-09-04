@@ -76,7 +76,8 @@ class  DetailsViewController : BaseViewController,UIScrollViewDelegate {
         scrollImg.addSubview(imageView!)
         
             imageView.kf.indicatorType = .activity
-        imageView.kf.setImage(with: URL(string: (photosData?.images?[0].link ?? recentData?.images)!), options: [.memoryCacheExpiration(.days(3))])
+        let img = photosData?.images?[0].link ?? photosData?.link!
+        imageView.kf.setImage(with: URL(string: (img ?? recentData?.images)!), options: [.memoryCacheExpiration(.days(3))])
            
      
              
