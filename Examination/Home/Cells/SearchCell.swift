@@ -78,10 +78,10 @@ class SearchCell: UITableViewCell {
                 }
         
 
-        descriptionLbl.text = photos.id
-        filenameLbl.setTitle("File name :\(photos.id ?? "")", for: .normal)
+        descriptionLbl.text = photos.title
+        filenameLbl.setTitle("ID : \(photos.id ?? "")", for: .normal)
    
-        reviewLabel.text = "Discount Price : \(photos.id ?? "")"
+        reviewLabel.text = "link : \(photos.images?[0].link ?? "")"
   
     }
     func configurePDF( _ pdf: ContentsData) {
