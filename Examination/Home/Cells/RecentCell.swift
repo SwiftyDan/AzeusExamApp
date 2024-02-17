@@ -26,14 +26,26 @@ class RecentCell: UICollectionViewCell {
         label.configure(font: .godo_M(15), color: .black, alignment: .center)
         return label
     }()
-    
-//     let idLabel: BaseLabel = {
-//        let label = BaseLabel()
-//         label.roundCorners(radius: 9, corners:  .allCorners)
-//         label.backgroundColor = .black
-//        label.configure(font: .godo_M(15), color: .white, alignment: .center)    
-//        return label
-//    }()
+    let idLabel: BaseLabel = {
+       let label = BaseLabel()
+        label.roundCorners(radius: 9, corners: .allCorners)
+        label.backgroundColor = .black
+       label.configure(font: .godo_M(15), color: .white, alignment: .center)
+       return label
+   }()
+
+
+
+
+
+
+
+
+
+
+
+
+
   
     // MARK: - Override
     
@@ -48,6 +60,9 @@ class RecentCell: UICollectionViewCell {
     required init?(coder: NSCoder) {
         fatalError()
     }
+
+
+
     
     // MARK: - Internal Method
     
@@ -71,6 +86,7 @@ class RecentCell: UICollectionViewCell {
            
 
 
+
         
     }
     
@@ -79,11 +95,15 @@ class RecentCell: UICollectionViewCell {
     private func initialSetting() {
 
     }
+
 }
+
 
 //MARK: - Layout
 extension RecentCell {
+
     private func layout2() {
+
 
 
         titleLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
@@ -103,13 +123,19 @@ extension RecentCell {
         idLabel.widthAnchor.constraint(equalToConstant: 70).isActive = true
     
     }
+
     
+
 }
 extension UIView {
 
+
+
 func roundCorners(radius: CGFloat = 20, corners: UIRectCorner = .allCorners) {
         self.clipsToBounds = true
+
         self.layer.cornerRadius = radius
+        
         if #available(iOS 11.0, *) {
             var arr: CACornerMask = []
             
