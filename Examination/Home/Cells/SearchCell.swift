@@ -17,6 +17,8 @@ class SearchCell: UITableViewCell {
         imageView.isUserInteractionEnabled = false
         return imageView
     }()
+    // MARK: - Properties
+    
 
     private let descriptionLbl: BaseLabel = {
         let label = BaseLabel()
