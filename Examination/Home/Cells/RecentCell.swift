@@ -6,16 +6,15 @@
 //
 import UIKit
 class RecentCell: UICollectionViewCell {
-    // MARK: - UI Component
 
-     let imageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.contentMode = .scaleAspectFill
-        imageView.clipsToBounds = true
+    //  let imageView: UIImageView = {
+    //     let imageView = UIImageView()
+    //     imageView.translatesAutoresizingMaskIntoConstraints = false
+    //     imageView.contentMode = .scaleAspectFill
+    //     imageView.clipsToBounds = true
         
-        return imageView
-    }()
+    //     return imageView
+    // }()
 
      let titleLabel: BaseLabel = {
         let label = BaseLabel()
