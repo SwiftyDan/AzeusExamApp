@@ -28,9 +28,9 @@ class RecentCell: UICollectionViewCell {
     }()
     let idLabel: BaseLabel = {
        let label = BaseLabel()
-        label.roundCorners(radius: 9, corners: .allCorners)
+        label.roundCorners(radius: 9, corners:  .allCorners)
         label.backgroundColor = .black
-       label.configure(font: .godo_M(15), color: .white, alignment: .center)
+       label.configure(font: .godo_M(15), color: .white, alignment: .center)    
        return label
    }()
   
