@@ -9,9 +9,6 @@ import UIKit
 
 class SearchCell: UITableViewCell {
 
-    // MARK: - Properties
-    
-    // MARK: - UI Component
     private let imgView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
