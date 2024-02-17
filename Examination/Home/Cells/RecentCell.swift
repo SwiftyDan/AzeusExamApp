@@ -4,9 +4,7 @@
 //
 //  Created by Dan Albert Luab on 9/3/22.
 //
-
 import UIKit
-
 class RecentCell: UICollectionViewCell {
     // MARK: - UI Component
 
