@@ -26,13 +26,14 @@ class RecentCell: UICollectionViewCell {
         label.configure(font: .godo_M(15), color: .black, alignment: .center)
         return label
     }()
-    let idLabel: BaseLabel = {
-       let label = BaseLabel()
-        label.roundCorners(radius: 9, corners:  .allCorners)
-        label.backgroundColor = .black
-       label.configure(font: .godo_M(15), color: .white, alignment: .center)    
-       return label
-   }()
+    
+//     let idLabel: BaseLabel = {
+//        let label = BaseLabel()
+//         label.roundCorners(radius: 9, corners:  .allCorners)
+//         label.backgroundColor = .black
+//        label.configure(font: .godo_M(15), color: .white, alignment: .center)    
+//        return label
+//    }()
   
     // MARK: - Override
     
